@@ -1,1 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CoffeeCore ERP</title>
+
+<style>
+:root {
+    --coffee: #6F4E37;
+    --beige: #F5E6CC;
+    --green: #2F4F4F;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: var(--beige);
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+header {
+    background: var(--coffee);
+    padding: 15px 40px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 18px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav ul li a:hover {
+    color: var(--beige);
+}
+
+section {
+    padding: 110px 60px;
+}
+
+.hero {
+    background: linear-gradient(rgba(111,78,55,0.9), rgba(47,79,79,0.9));
+    color: white;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.hero h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: var(--coffee);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: var(--coffee);
+    color: white;
+}
+
+footer {
+    background: var(--green);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<h1>☕ CoffeeCore ERP</h1>
+<ul>
+<li><a href="#problem">Problem</a></li>
+<li><a href="#solution">Solution</a></li>
+<li><a href="#analysis">Analysis</a></li>
+<li><a href="#requirements">Requirements</a></li>
+<li><a href="#scope">Scope</a></li>
+<li><a href="#tech">Tech</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero">
+<div class="container">
+<h2>Control & Growth for Coffee Shop Chains</h2>
+<p>ERP specialized in multi-branch coffee businesses.</p>
+</div>
+</section>
+
+<section id="problem">
+<div class="container">
+<h2>Problem Definition</h2>
+<div class="card">
+<p>Managing multiple coffee shop branches without an integrated ERP system leads to data fragmentation, inventory losses, inefficient staff management, and lack of real-time financial visibility. Independent branch operations increase operational complexity and reduce strategic growth capacity.</p>
+</div>
+</div>
+</section>
+
+<section id="solution">
+<div class="container">
+<h2>Proposed Solution</h2>
+<div class="card">
+<p>CoffeeCore ERP centralizes inventory, sales, suppliers, HR, and financial management into a cloud-based platform. It provides real-time analytics, recipe-based cost control, multi-branch monitoring, and automated reporting.</p>
+</div>
+
+<h2>Justification</h2>
+<div class="card">
+<p>This ERP improves operational efficiency, reduces inventory losses, optimizes supplier purchasing, and provides real-time financial insights. It enables strategic decision-making and sustainable expansion of coffee shop chains.</p>
+</div>
+
+<h2>Target Users</h2>
+<div class="card">
+<ul>
+<li>Branch Managers</li>
+<li>General Administrators</li>
+<li>Cashiers and Sales Staff</li>
+<li>Inventory & Supplier Managers</li>
+<li>HR Department</li>
+</ul>
+</div>
+
+<h2>Return on Investment (ROI)</h2>
+<div class="card">
+<ul>
+<li>Inventory cost reduction</li>
+<li>Operational error minimization</li>
+<li>Staff efficiency improvement</li>
+<li>Profit margin optimization</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section id="analysis">
+<div class="container">
+<h2>Comparative Analysis</h2>
+<div class="card">
+<table>
+<tr>
+<th>Application</th>
+<th>Suppliers</th>
+<th>HR</th>
+<th>Inventory</th>
+<th>Sales</th>
+<th>CRM</th>
+</tr>
+<tr>
+<td>Odoo</td>
+<td>✔</td>
+<td>✔</td>
+<td>✔</td>
+<td>✔</td>
+<td>✔</td>
+</tr>
+<tr>
+<td>Alegra</td>
+<td>✔</td>
+<td>✖</td>
+<td>✔</td>
+<td>✔</td>
+<td>✔</td>
+</tr>
+<tr>
+<td>Siigo</td>
+<td>✔</td>
+<td>✔</td>
+<td>✔</td>
+<td>✔</td>
+<td>✔</td>
+</tr>
+</table>
+<p><strong>Gap Identified:</strong> None of these systems are fully specialized for coffee chain management with detailed recipe costing and branch performance comparison.</p>
+</div>
+</div>
+</section>
+
+<section id="requirements">
+<div class="container">
+<h2>Functional Requirements</h2>
+<div class="card">
+<ul>
+<li>User & Role Management</li>
+<li>Multi-Branch Management</li>
+<li>Inventory with stock alerts</li>
+<li>Supplier Order Tracking</li>
+<li>Point of Sale (POS)</li>
+<li>Cost per beverage calculation</li>
+<li>Financial reporting dashboard</li>
+<li>HR & Payroll management</li>
+</ul>
+</div>
+
+<h2>Non-Functional Requirements</h2>
+<div class="card">
+<ul>
+<li>High security (data encryption)</li>
+<li>24/7 Availability</li>
+<li>Cloud scalability</li>
+<li>User-friendly interface</li>
+<li>Fast system response</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section id="scope">
+<div class="container">
+<h2>Project Scope (Triple Constraint)</h2>
+<div class="card">
+<p><strong>Scope:</strong> Inventory, Sales, HR, Suppliers, Reports, Multi-branch.</p>
+<p><strong>Time:</strong> 4–6 months development.</p>
+<p><strong>Cost:</strong> Development team + cloud infrastructure.</p>
+</div>
+</div>
+</section>
+
+<section id="tech">
+<div class="container">
+<h2>Technologies</h2>
+<div class="card">
+<ul>
+<li>Frontend: React / HTML5 / CSS3</li>
+<li>Backend: Node.js / Django</li>
+<li>Database: PostgreSQL</li>
+<li>Cloud: AWS / Azure</li>
+<li>Version Control: GitHub</li>
+</ul>
+</div>
+</div>
+</section>
+
+<footer>
+<p>© 2026 CoffeeCore ERP | Academic Project</p>
+</footer>
+
+</body>
+</html>
 
