@@ -40,8 +40,22 @@ nav {
     align-items: center;
 }
 
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+nav img {
+    height: 45px;
+    border-radius: 8px;
+    background: white;
+    padding: 4px;
+}
+
 nav h1 {
     color: white;
+    font-size: 20px;
 }
 
 nav ul {
@@ -123,7 +137,13 @@ footer {
 
 <header>
 <nav>
-<h1>☕ CoffeeCore ERP</h1>
+
+<div class="logo-container">
+    <!-- LOGO AGREGADO AQUI -->
+    <img src="logo.jpeg" alt="CoffeeCore Logo">
+    <h1>CoffeeCore ERP</h1>
+</div>
+
 <ul>
 <li><a href="#problem">Problem</a></li>
 <li><a href="#solution">Solution</a></li>
@@ -132,6 +152,7 @@ footer {
 <li><a href="#scope">Scope</a></li>
 <li><a href="#tech">Tech</a></li>
 </ul>
+
 </nav>
 </header>
 
@@ -224,7 +245,7 @@ footer {
 <td>✔</td>
 </tr>
 </table>
-<p><strong>Gap Identified:</strong> None of these systems are fully specialized for coffee chain management with detailed recipe costing and branch performance comparison.</p>
+<p><strong>Gap Identified:</strong> None are specialized for coffee chains with detailed recipe costing and branch performance comparison.</p>
 </div>
 </div>
 </section>
@@ -290,4 +311,3 @@ footer {
 
 </body>
 </html>
-
